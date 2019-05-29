@@ -42,10 +42,8 @@ $(function(){
 	
 	Карусель */
 	
-	/* К верху
-	
 	$(window).scroll(function(){
-		if($(this).scrollTop() > $(this).height()) {
+		if($(this).scrollTop() > $(this).height()/4) {
 			$('.top').addClass('active');
 		}else {
 			$('.top').removeClass('active');
@@ -55,7 +53,6 @@ $(function(){
 		$('html, body').stop().animate({scrollTop: 0}, 'slow', 'swing');
 	});
 	
-	Конец */
 	
     // $('body').fadeOut();
 });

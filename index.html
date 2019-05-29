@@ -40,23 +40,35 @@
 	<header>
 		<div class="container">
 			<div class="row">
-				<div class="col-xl-3">
+				<div class="col-xl-3 col-lg-3">
 					<h1>
 						<span>Литературный блог</span><br>Василия Шеин
 					</h1>
 				</div>
-				<div class="col-xl-6">
+				<div class="col-xl-6 col-lg-8">
 					<nav>
 						<ul>
 							<li><a class="active_menu" href="">Главная</a></li>
-							<li><a href="">Жанры</a></li>
+							<li class="list_menu">
+								<a href="">Жанры</a>
+								<ul class="dropdown_menu">
+									<li><a href="">Легенда</a></li>
+									<li><a href="">Новелла</a></li>
+									<li><a href="">Очерк</a></li>
+									<li><a href="">Повесть</a></li>
+									<li><a href="">Рассказ</a></li>
+									<li><a href="">Роман</a></li>
+									<li><a href="">Сказка</a></li>
+									<li><a href="">Эпопея</a></li>
+								</ul>
+							</li>
 							<li><a href="">Избранное</a></li>
 							<li><a href="">Новое</a></li>
 							<li><a href="">Контакты</a></li>
 						</ul>
 					</nav>
 				</div>
-				<div class="col-xl-3">
+				<div class="col-xl-3 col-lg-1">
 					<form class="search">
 						<span class="icon"></span>
 						<input type="search" name="" placeholder="Поиск по сайту">
@@ -68,7 +80,7 @@
 	<section class="all_content">
 		<div class="container">
 			<div class="row">
-				<div class="col-xl-9">
+				<div class="col-xl-9 col-lg-9">
 					<article class="art_post">
 						<img src="img/img_for_post1.png" alt="Картинка для статьи">
 						<div class="date_post"><span>20 апреля 2019</span></div>
@@ -133,7 +145,7 @@
 						</ul>
 					</article>
 				</div>
-				<div class="col-xl-3">
+				<div class="col-xl-3 col-lg-3">
 					<aside>
 						<div class="author_info">
 							<img src="img/shein.png" alt="Фото Василий Шеин">
@@ -163,14 +175,14 @@
 							</div>
 							<div class="popular_sidebar_two">
 								<a href="">
-									Почему в XIX веке говорили «Да-с» и «Нет-с» и добавляли частицу -с к другим словам 
+									Почему в XIX веке говорили «Да-с» и «Нет-с» и добавляли частицу -с <span>к другим словам</span> 
 								</a>
 								<p class="date_post_sidebar">20 апреля 2019</p>
 								<p class="like_post_sidebar" style="background-image: url(img/icons/heart.svg)">269</p>
 							</div>
 							<div class="popular_sidebar_three">
 								<a href="">
-									Кто настоящий автор романов «Двенадцать стульев» и «Золотой теленок», и были ли Ильф и Петров «литературными неграми» 
+									Кто настоящий автор романов «Двенадцать стульев» и «Золотой теленок», и были ли Ильф<i>...</i><span> и Петров «литературными неграми»</span> 
 								</a>
 								<p class="date_post_sidebar">20 апреля 2019</p>
 								<p class="like_post_sidebar" style="background-image: url(img/icons/heart.svg)">269</p>
@@ -233,26 +245,26 @@
 	<footer>
 		<div class="container">
 			<div class="row">
-				<div class="col-xl-4">
+				<div class="col-xl-4 col-lg-4">
 					<div class="footer_last_publication">
 						<h2>Последние публикации</h2>
 						<ul>
 							<li>
 								<a href="">
-									Особую ценность, на наш взгляд, представляет декодирование непосредственно аллитерирует музыкал...
+									Особую ценность, на наш взгляд, представляет декодирование непосредственно аллитерирует<i>...</i><span> музыкал...</span>
 								</a>
 								<p>21 апреля 2019</p>
 							</li>
 							<li>
 								<a href="">
-									Поэт инстинктивно чувствовал преимущества реального устного<br/> исполнения тех стихов, в которых филиац..
+									Поэт инстинктивно чувствовал преимущества реального устного<br/> исполнения тех стихов, в котор<i>...</i><span>ых филиац..</span>
 								</a>
 								<p>20 апреля 2019</p>
 							</li>
 						</ul>
 					</div>
 				</div>
-				<div class="col-xl-4">
+				<div class="col-xl-4 col-lg-4">
 					<div class="sub_email">
 						<h2>Подпишись на обновления</h2>
 						<h3>Узнай первым о новых публикациях<br/> и получи подарок!</h3>
@@ -269,7 +281,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-xl-4">
+				<div class="col-xl-4 col-lg-4">
 					<div class="blog_info">
 						<h2><span>Литературный блог</span><br>Василия Шеин</h2>
 						<p>Писательской деятельностью начал заниматься с 12 лет. Работал во многих направлениях жанров: мистика и ужасы. Каждый день стараюсь выкладывать по новой главе своей книги “О, этот прекрасный Мир!”
@@ -281,7 +293,7 @@
 			</div>
 		</div>
 	</footer>
-	<!--<div class="top" title="Наверх"><img src="img/double-arrow-left.svg" alt="Наверх"></div>-->
+	<div class="top">Наверх</div>
 	<!--*********   Css Styles   *********-->
 	<link rel="stylesheet" href="css/libs.min.css">
 	<link rel="stylesheet" href="css/main.css">

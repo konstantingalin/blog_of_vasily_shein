@@ -11402,6 +11402,28 @@ body {
 .container {
   padding: 0; }
 
+.top {
+  display: inline-block;
+  color: #c8c8c8;
+  font-weight: 500;
+  font-size: 14px;
+  padding: 37px 0 0;
+  background-image: url(../img/icons/arrow_top.svg);
+  background-repeat: no-repeat;
+  background-position: center 0;
+  -webkit-background-size: 35px 35px;
+          background-size: 35px;
+  position: fixed;
+  left: -120px;
+  bottom: 20px;
+  z-index: 12; }
+  .top:hover {
+    cursor: pointer;
+    color: #00b906;
+    background-image: url(../img/icons/arrow_top_active.svg); }
+  .top.active {
+    left: 20px; }
+
 .soc a {
   float: left;
   margin-right: 25px; }
@@ -11466,13 +11488,13 @@ header {
         margin-bottom: 0;
         border-bottom: 2px solid;
         border-color: #00b906; }
-      header ul li:nth-child(2) a {
-        padding-left: 21px;
-        background-image: url(../img/icons/arrow.svg);
-        background-repeat: no-repeat;
-        -webkit-background-size: 12px 12px;
-                background-size: 12px;
-        background-position: 0px 12px; }
+    header ul .list_menu > a {
+      padding-left: 21px;
+      background-image: url(../img/icons/arrow.svg);
+      background-repeat: no-repeat;
+      -webkit-background-size: 12px 12px;
+              background-size: 12px;
+      background-position: 0px 12px; }
   header .search {
     margin: 47px 0 0 38px; }
     header .search input {
@@ -11505,6 +11527,31 @@ header {
         color: #c8c8c8; }
       header .search input[type="search"]:hover, header .search input[type="search"]:focus {
         background-image: url(../img/icons/search_active.svg); }
+
+/*** Выпадающие меню ***/
+.list_menu {
+  position: relative; }
+
+.list_menu:hover .dropdown_menu {
+  display: block; }
+
+.list_menu:hover > a {
+  background-image: url(../img/icons/arrow_active.svg); }
+
+.dropdown_menu {
+  display: none;
+  padding: 35px 0 21px;
+  position: absolute;
+  background-color: #fff;
+  top: 0;
+  left: -47px;
+  z-index: 1; }
+  .dropdown_menu li {
+    display: block; }
+  .dropdown_menu a {
+    padding: 0;
+    margin: 0 40px 12px;
+    font-weight: 400; }
 
 /****** ARTICLES ******/
 .all_content {
@@ -11654,6 +11701,10 @@ p.like_post_sidebar {
 .popular_sidebar_two {
   padding-right: 20px; }
 
+.popular_sidebar_three i {
+  font-style: normal;
+  display: none; }
+
 .genre_sidebar ul, .hashtags_sidebar ul, .archivieren ul {
   padding: 0;
   margin: 0; }
@@ -11715,6 +11766,9 @@ footer {
   font-weight: 400;
   font-size: 14px;
   margin: 7px 0 26px; }
+
+.footer_last_publication a i {
+  display: none; }
 
 .footer_last_publication a:hover {
   color: #568cb3; }
@@ -11799,7 +11853,64 @@ footer {
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {
-  /**/ }
+  header ul {
+    margin-left: 71px; }
+  .dropdown_menu {
+    left: -88px; }
+  .all_content {
+    padding-top: 45px;
+    padding-bottom: 10px; }
+  .art_post h2, .art_post p {
+    padding-right: 20px; }
+  .author_info .soc a {
+    margin-right: 15px; }
+  .author_info p {
+    margin-right: 0; }
+  .author_info img[alt="Подпись автора"] {
+    margin: 18px 0 0; }
+  .popular_sidebar_one a {
+    padding-right: 20px; }
+  .popular_sidebar_two a {
+    position: relative;
+    width: 220px; }
+  .popular_sidebar_two span, .popular_sidebar_three span {
+    display: none; }
+  p.like_post_sidebar {
+    margin-left: 20px; }
+  .watch_all_sidebar {
+    margin-top: -2px; }
+  .genre_sidebar {
+    margin-top: 66px; } }
+
+.genre_sidebar h2, .hashtags_sidebar h2, .archivieren h2 {
+  margin-bottom: 0; }
+
+.genre_sidebar li, .hashtags_sidebar li, .archivieren li {
+  padding-top: 8px; }
+
+.hashtags_sidebar li {
+  margin-bottom: 1px; }
+
+.hashtags_sidebar ul li:nth-child(3) {
+  margin-right: 19px; }
+
+.footer_last_publication a i {
+  display: inline; }
+
+.footer_last_publication a span {
+  display: none; }
+
+.sub_email {
+  margin: 0; }
+  .sub_email h3 {
+    padding-right: 40px; }
+    .sub_email h3 br {
+      display: none; }
+  .sub_email input[type="email"] {
+    width: 215px; }
+
+.blog_info {
+  padding: 0; }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
