@@ -11915,7 +11915,7 @@ footer {
 @media only screen and (max-width: 992px) {
   header nav {
     position: relative;
-    width: 500px; }
+    width: 480px; }
     header nav ul {
       margin-left: -5px; }
     header nav li a {
@@ -11962,11 +11962,86 @@ footer {
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
-  /**/ }
+  header h1 {
+    width: 175px;
+    font-size: 23px;
+    line-height: 36px;
+    margin: 19px 0 24px; }
+    header h1 span {
+      font-size: 11px; }
+  header nav {
+    display: none; }
+  .all_content .author_info_ct {
+    margin: -14px 0 126px 0; }
+    .all_content .author_info_ct h3 {
+      font-size: 18px;
+      margin: 0 0 3px; }
+    .all_content .author_info_ct p {
+      padding-right: 90px;
+      font-size: 14px;
+      line-height: 26px;
+      clear: right; }
+    .all_content .author_info_ct img[src="img/shein.png"] {
+      width: 160px;
+      float: left;
+      padding-top: 2px;
+      margin-right: 26px;
+      padding-bottom: 23px; }
+    .all_content .author_info_ct img[src="img/signature.png"] {
+      width: 133px;
+      margin: 3px 0 0;
+      float: right; }
+    .all_content .author_info_ct .soc {
+      clear: both;
+      margin-top: 6px; }
+  .footer_last_publication ul li {
+    margin-right: 50px; }
+  .footer_last_publication ul li a b, .footer_last_publication ul li a span {
+    display: inline; }
+  .footer_last_publication ul li a i, .footer_last_publication ul li a br {
+    display: none; }
+  .sub_email {
+    padding-top: 5px; }
+    .sub_email .sub input[type="email"] {
+      width: 245px; }
+  .blog_info {
+    margin-top: 42px; }
+    .blog_info h2 {
+      font-size: 26px; }
+      .blog_info h2 span {
+        font-size: 12px; }
+  .blog_info p:nth-child(2) {
+    padding-right: 134px;
+    width: auto; }
+  .blog_info p:nth-child(3) br {
+    display: none; } }
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 575px) {
+  .container {
+    padding: 0 15px; } }
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 495px) {
+  .all_content .author_info_ct img[src="img/shein.png"] {
+    padding-bottom: 70px; } }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
-  /**/ }
+  .all_content .author_info_ct img[src="img/shein.png"] {
+    padding-bottom: 24px; }
+  .all_content .author_info_ct p {
+    padding-right: 0; }
+  .art_post h2 {
+    padding-right: 0; }
+  .art_post p {
+    margin-right: 0; }
+    .art_post p span {
+      display: none; }
+    .art_post p:after {
+      display: inline;
+      content: "...";
+      margin-left: -4px; } }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 320px) {
