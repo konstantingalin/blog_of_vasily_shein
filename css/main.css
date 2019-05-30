@@ -11556,6 +11556,8 @@ header {
 /****** ARTICLES ******/
 .all_content {
   padding: 40px 0 0; }
+  .all_content .author_info_ct {
+    display: none; }
 
 .art_post {
   padding: 0 30px 121px 0; }
@@ -11770,6 +11772,9 @@ footer {
 .footer_last_publication a i {
   display: none; }
 
+.footer_last_publication a b {
+  font-weight: 400; }
+
 .footer_last_publication a:hover {
   color: #568cb3; }
 
@@ -11857,6 +11862,8 @@ footer {
     margin-left: 71px; }
   .dropdown_menu {
     left: -88px; }
+  header .search {
+    display: none; }
   .all_content {
     padding-top: 45px;
     padding-bottom: 10px; }
@@ -11880,41 +11887,78 @@ footer {
   .watch_all_sidebar {
     margin-top: -2px; }
   .genre_sidebar {
-    margin-top: 66px; } }
-
-.genre_sidebar h2, .hashtags_sidebar h2, .archivieren h2 {
-  margin-bottom: 0; }
-
-.genre_sidebar li, .hashtags_sidebar li, .archivieren li {
-  padding-top: 8px; }
-
-.hashtags_sidebar li {
-  margin-bottom: 1px; }
-
-.hashtags_sidebar ul li:nth-child(3) {
-  margin-right: 19px; }
-
-.footer_last_publication a i {
-  display: inline; }
-
-.footer_last_publication a span {
-  display: none; }
-
-.sub_email {
-  margin: 0; }
-  .sub_email h3 {
-    padding-right: 40px; }
-    .sub_email h3 br {
-      display: none; }
-  .sub_email input[type="email"] {
-    width: 215px; }
-
-.blog_info {
-  padding: 0; }
+    margin-top: 66px; }
+  .genre_sidebar h2, .hashtags_sidebar h2, .archivieren h2 {
+    margin-bottom: 0; }
+  .genre_sidebar li, .hashtags_sidebar li, .archivieren li {
+    padding-top: 8px; }
+  .hashtags_sidebar li {
+    margin-bottom: 1px; }
+  .hashtags_sidebar ul li:nth-child(3) {
+    margin-right: 19px; }
+  .footer_last_publication a i {
+    display: inline; }
+  .footer_last_publication a span {
+    display: none; }
+  .sub_email {
+    margin: 0; }
+    .sub_email h3 {
+      padding-right: 40px; }
+      .sub_email h3 br {
+        display: none; }
+    .sub_email input[type="email"] {
+      width: 215px; }
+  .blog_info {
+    padding: 0; } }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
-  /**/ }
+  header nav {
+    position: relative;
+    width: 500px; }
+    header nav ul {
+      margin-left: -5px; }
+    header nav li a {
+      font-size: 15px;
+      margin-right: 24px; }
+    header nav .dropdown_menu {
+      left: -16px; }
+  .all_content {
+    padding-bottom: 0; }
+    .all_content aside {
+      display: none; }
+    .all_content .author_info_ct {
+      display: block;
+      margin: -7px 140px 82px 0; }
+      .all_content .author_info_ct h3 {
+        margin: 0 0 3px; }
+      .all_content .author_info_ct p {
+        line-height: 31px; }
+    .all_content img[src="img/shein.png"] {
+      width: 220px;
+      float: left;
+      padding-top: 2px;
+      margin-right: 39px; }
+    .all_content img[src="img/signature.png"] {
+      width: 133px;
+      margin: -8px 0 0 30px; }
+    .all_content .soc a {
+      margin-right: 19px; }
+  .art_post, .art_post p {
+    padding-right: 0; }
+  .footer_last_publication b, .footer_last_publication br {
+    display: none; }
+  .sub_email h3 br {
+    display: inline; }
+  .sub_email .sub input[type="email"] {
+    width: 175px; }
+  .blog_info {
+    padding-bottom: 14px; }
+  .blog_info p:nth-child(2) {
+    padding-right: 0px;
+    width: 221px; }
+  .blog_info p:nth-child(3) br {
+    display: none; } }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
