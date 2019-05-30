@@ -11448,6 +11448,18 @@ body {
     background-color: #00b906;
     color: #fff; }
 
+.active_search {
+  background-image: url(../img/icons/cancel.svg); }
+
+.active_search + .search_mobile_active {
+  display: block; }
+
+.no_active_search {
+  background-image: url(../img/icons/search.svg); }
+
+.no_active_search + .search_mobile_active {
+  display: none; }
+
 /****** HEADER ******/
 header {
   -webkit-box-shadow: 0px 8px 100px 0px rgba(0, 0, 0, 0.07);
@@ -11495,15 +11507,27 @@ header {
       -webkit-background-size: 12px 12px;
               background-size: 12px;
       background-position: 0px 12px; }
-  header .search {
+  header .search_mobile {
+    position: relative;
+    margin-top: 59px;
+    display: none;
+    width: 50px;
+    height: 50px; }
+    header .search_mobile .icon_search {
+      padding: 8px;
+      background-repeat: no-repeat;
+      -webkit-background-size: 16px 16px;
+              background-size: 16px;
+      cursor: pointer; }
+  header .search, header .search_mobile_active {
     margin: 47px 0 0 38px; }
-    header .search input {
+    header .search input, header .search_mobile_active input {
       position: relative;
       display: inline-block;
       font-size: 16px;
       font-weight: 500;
       outline: none; }
-    header .search input[type="search"] {
+    header .search input[type="search"], header .search_mobile_active input[type="search"] {
       background-image: url(../img/icons/search.svg);
       background-repeat: no-repeat;
       -webkit-background-size: 16px 16px;
@@ -11515,18 +11539,30 @@ header {
       border-bottom: 1px solid;
       border-color: #f0f0f0;
       padding-left: 26px; }
-      header .search input[type="search"]::-webkit-input-placeholder {
+      header .search input[type="search"]::-webkit-input-placeholder, header .search_mobile_active input[type="search"]::-webkit-input-placeholder {
         color: #c8c8c8; }
-      header .search input[type="search"]::-moz-placeholder {
+      header .search input[type="search"]::-moz-placeholder, header .search_mobile_active input[type="search"]::-moz-placeholder {
         color: #c8c8c8; }
-      header .search input[type="search"]:-ms-input-placeholder {
+      header .search input[type="search"]:-ms-input-placeholder, header .search_mobile_active input[type="search"]:-ms-input-placeholder {
         color: #c8c8c8; }
-      header .search input[type="search"]::-ms-input-placeholder {
+      header .search input[type="search"]::-ms-input-placeholder, header .search_mobile_active input[type="search"]::-ms-input-placeholder {
         color: #c8c8c8; }
-      header .search input[type="search"]::placeholder {
+      header .search input[type="search"]::placeholder, header .search_mobile_active input[type="search"]::placeholder {
         color: #c8c8c8; }
-      header .search input[type="search"]:hover, header .search input[type="search"]:focus {
+      header .search input[type="search"]:hover, header .search input[type="search"]:focus, header .search_mobile_active input[type="search"]:hover, header .search_mobile_active input[type="search"]:focus {
         background-image: url(../img/icons/search_active.svg); }
+  header .search_mobile_active {
+    z-index: 1;
+    position: relative;
+    top: -23px;
+    left: -438px; }
+    header .search_mobile_active input[type="search"] {
+      padding: 17px 50px 23px 19px;
+      font-weight: 400;
+      -webkit-box-shadow: 0px 8px 100px 0px rgba(0, 0, 0, 0.07);
+              box-shadow: 0px 8px 100px 0px rgba(0, 0, 0, 0.07);
+      width: 450px;
+      background-position: 414px 20px; }
 
 /*** Выпадающие меню ***/
 .list_menu {
@@ -11579,6 +11615,8 @@ header {
   .art_post .button {
     float: left;
     margin: 20px 29px 0 0; }
+  .art_post .button_320 {
+    display: none; }
   .art_post .numbers_of_post {
     margin: 45px 0 0;
     padding: 0;
@@ -11611,6 +11649,8 @@ header {
     font-size: 16px;
     line-height: 31px;
     color: #000d1d; }
+    .art_post p i {
+      font-style: normal; }
 
 .date_post {
   display: inline-block;
@@ -11864,6 +11904,9 @@ footer {
     left: -88px; }
   header .search {
     display: none; }
+  header .search_mobile {
+    display: block;
+    float: right; }
   .all_content {
     padding-top: 45px;
     padding-bottom: 10px; }
@@ -12045,7 +12088,39 @@ footer {
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 320px) {
-  /**/ }
+  .all_content .author_info_ct img[src="img/shein.png"] {
+    width: 124px;
+    clear: both; }
+  .all_content .author_info_ct h3, .all_content .author_info_ct p {
+    clear: both; }
+  .all_content .author_info_ct h3 {
+    font-size: 20px; }
+  .all_content .author_info_ct p {
+    width: 298px;
+    font-size: 16px;
+    line-height: 28px; }
+  .art_post h2 {
+    font-size: 20px;
+    line-height: 30px; }
+  .art_post p {
+    line-height: 28px; }
+    .art_post p i {
+      display: none; }
+  .art_post .hashtags li:nth-child(3) {
+    margin: 0; }
+  .art_post .button {
+    display: none; }
+  .art_post .button_320 {
+    display: block;
+    margin: 30px 0 64px; }
+  .art_post .numbers_of_post {
+    margin-top: -10px; }
+  .footer_last_publication ul li {
+    margin-right: 0; }
+  .sub_email h3 br {
+    display: none; }
+  .blog_info p:nth-child(2) {
+    padding-right: 0; } }
 
 /*==========  Mobile First  ==========*/
 /* Custom, iPhone Retina */

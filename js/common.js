@@ -1,4 +1,14 @@
 $(function(){
+	
+	$(".icon_search").click(function(){
+		if($('.icon_search').hasClass('active_search')){
+			$('.icon_search').removeClass('active_search').addClass('no_active_search');
+		}else{
+			$(".icon_search").removeClass('no_active_search').addClass('active_search');	
+		}
+	});
+	
+	
 	/* Меню
 	
 	$('#my-menu').mmenu({
