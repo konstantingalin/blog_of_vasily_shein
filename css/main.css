@@ -11488,6 +11488,8 @@ header {
       font-size: 13px;
       font-family: 'Roboto';
       font-weight: normal; }
+  header .nav_mobile {
+    display: none; }
   header ul {
     margin: 47px 0 0 29px;
     padding: 0; }
@@ -12027,6 +12029,8 @@ footer {
       font-size: 11px; }
   header nav {
     display: none; }
+  header .nav_mobile {
+    display: block; }
   .all_content .author_info_ct {
     margin: -14px 0 126px 0; }
     .all_content .author_info_ct h3 {
