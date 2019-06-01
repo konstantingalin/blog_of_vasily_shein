@@ -11449,16 +11449,27 @@ body {
     color: #fff; }
 
 .active_search {
-  background-image: url(../img/icons/cancel.svg); }
+  background-image: url(../img/icons/cancel.svg);
+  display: none; }
 
 .active_search + .search_mobile_active {
   display: block; }
 
 .no_active_search {
+  z-index: 1;
+  background: #fff;
   background-image: url(../img/icons/search.svg); }
 
 .no_active_search + .search_mobile_active {
   display: none; }
+
+.icon_other {
+  cursor: pointer;
+  background-image: url(../img/icons/cancel.svg);
+  display: block;
+  position: absolute;
+  right: 0;
+  z-index: -1; }
 
 /****** HEADER ******/
 header {
@@ -11509,16 +11520,18 @@ header {
       background-position: 0px 12px; }
   header .search_mobile {
     position: relative;
-    margin-top: 59px;
+    margin-top: 53px;
+    margin-bottom: -3px;
     display: none;
     width: 50px;
     height: 50px; }
-    header .search_mobile .icon_search {
+    header .search_mobile .icon_search, header .search_mobile .icon_other {
       padding: 8px;
       background-repeat: no-repeat;
       -webkit-background-size: 16px 16px;
               background-size: 16px;
-      cursor: pointer; }
+      cursor: pointer;
+      float: right; }
   header .search, header .search_mobile_active {
     margin: 47px 0 0 38px; }
     header .search input, header .search_mobile_active input {
@@ -11554,7 +11567,7 @@ header {
   header .search_mobile_active {
     z-index: 1;
     position: relative;
-    top: -23px;
+    top: 1px;
     left: -438px; }
     header .search_mobile_active input[type="search"] {
       padding: 17px 50px 23px 19px;

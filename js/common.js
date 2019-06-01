@@ -1,14 +1,36 @@
 $(function(){
 	
 	$(".icon_search").click(function(){
-		if($('.icon_search').hasClass('active_search')){
-			$('.icon_search').removeClass('active_search').addClass('no_active_search');
-		}else{
-			$(".icon_search").removeClass('no_active_search').addClass('active_search');	
+		if($('.icon_search').hasClass('no_active_search')){
+			$('.icon_search').removeClass('no_active_search').addClass('active_search');
 		}
+		$(document).mouseup(function (e){ 
+		var div = $(".search_mobile_active"); 
+		if (!div.is(e.target) 
+		    && div.has(e.target).length === 0) { 
+			$(".icon_search").removeClass('active_search').addClass('no_active_search');
+		}
+		});
 	});
 	
+	/* Рабочий код
 	
+	$(".icon_search").click(function(){
+		$(document).mouseup(function (e){ // событие клика по веб-документу
+		var div = $(".search_mobile_active"); // тут указываем ID элемента
+		if (!div.is(e.target) // если клик был не по нашему блоку
+		    && div.has(e.target).length === 0) { // и не по его дочерним элементам
+			$(".icon_search").removeClass('active_search').addClass('no_active_search');
+		}
+			$(".icon_search").click(function(){
+				if($('.icon_search').hasClass('no_active_search')){
+					$('.icon_search').removeClass('no_active_search').addClass('active_search');
+				}else{
+					$('.icon_search').removeClass('active_search').addClass('no_active_search');
+				}
+			});
+		}); */
+		
 	/* Меню
 	
 	$('#my-menu').mmenu({
@@ -65,8 +87,7 @@ $(function(){
 	
 	
     // $('body').fadeOut();
-});
-
+})
 /* Прелоудер
 
 $(window).on('load', function(){
