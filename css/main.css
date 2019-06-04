@@ -11437,6 +11437,7 @@ body {
   width: 21px; }
 
 .button {
+  text-decoration: none;
   font-size: 14px;
   color: #00b906;
   outline: none;
@@ -11774,9 +11775,9 @@ header {
   color: #000d1d; }
   .author_info .soc {
     float: left; }
-  .author_info img[src="img/shein.png"] {
+  .author_info img[alt="Фото Василий Шеин"] {
     width: 100%; }
-  .author_info img[src="img/signature.png"] {
+  .author_info img[alt="Подпись автора"] {
     width: 120px;
     margin-left: 30px;
     margin-top: -1px; }
@@ -12004,7 +12005,7 @@ footer {
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {
   header ul {
-    margin-left: 71px; }
+    margin-left: 86px; }
   .dropdown_menu {
     left: -88px; }
   header .search {
@@ -12065,12 +12066,16 @@ footer {
     position: relative;
     width: 480px; }
     header nav ul {
-      margin-left: -5px; }
+      margin-top: 49px;
+      margin-left: -4px; }
     header nav li a {
       font-size: 15px;
-      margin-right: 24px; }
+      margin-right: 23px; }
     header nav .dropdown_menu {
       left: -16px; }
+  header .search_mobile {
+    margin-top: 56px;
+    margin-bottom: -4px; }
   .all_content {
     padding-bottom: 0; }
     .all_content aside {
@@ -12120,7 +12125,11 @@ footer {
   header nav {
     display: none; }
   header .nav_mobile {
-    display: block; }
+    margin-top: -7px;
+    display: block;
+    width: auto; }
+    header .nav_mobile ul .list_menu_mobile > a {
+      margin-left: -60px; }
   .all_content .author_info_ct {
     margin: -14px 0 126px 0; }
     .all_content .author_info_ct h3 {
@@ -12193,8 +12202,22 @@ footer {
       content: "...";
       margin-left: -4px; } }
 
-/* Custom, iPhone Retina */
-@media only screen and (max-width: 320px) {
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 479px) {
+  .result_search {
+    width: 294px;
+    right: -438px; }
+    .result_search .result_search_item img {
+      float: none;
+      margin-bottom: 10px; }
+  .nav_mobile .dropdown_menu {
+    left: -80px; }
+    .nav_mobile .dropdown_menu li a {
+      width: auto; }
+  header .search_mobile input[type="search"] {
+    width: 294px;
+    left: 156px;
+    background-position: 255px 20px; }
   .all_content .author_info_ct img[src="img/shein.png"] {
     width: 124px;
     clear: both; }
@@ -12219,15 +12242,28 @@ footer {
     display: none; }
   .art_post .button_320 {
     display: block;
+    clear: both;
     margin: 30px 0 64px; }
   .art_post .numbers_of_post {
     margin-top: -10px; }
+  .all_content .author_info_ct {
+    margin-bottom: 110px; }
   .footer_last_publication ul li {
     margin-right: 0; }
   .sub_email h3 br {
     display: none; }
   .blog_info p:nth-child(2) {
     padding-right: 0; } }
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 320px) {
+  .nav_mobile .list_menu_mobile .dropdown_menu {
+    position: absolute;
+    left: -40px; }
+    .nav_mobile .list_menu_mobile .dropdown_menu li a {
+      width: auto; }
+    .nav_mobile .list_menu_mobile .dropdown_menu .list_menu_mobile_two:hover {
+      margin-right: 137px; } }
 
 /*==========  Mobile First  ==========*/
 /* Custom, iPhone Retina */
