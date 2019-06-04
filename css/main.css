@@ -11471,6 +11471,11 @@ body {
   right: 0;
   z-index: -1; }
 
+.nav_mobile .dropdown_menu {
+  -webkit-box-shadow: 0px 8px 100px 0px rgba(0, 0, 0, 0.07);
+          box-shadow: 0px 8px 100px 0px rgba(0, 0, 0, 0.07);
+  display: block; }
+
 /****** HEADER ******/
 header {
   -webkit-box-shadow: 0px 8px 100px 0px rgba(0, 0, 0, 0.07);
@@ -11490,6 +11495,47 @@ header {
       font-weight: normal; }
   header .nav_mobile {
     display: none; }
+    header .nav_mobile .dropdown_menu {
+      margin: 58px 0 0 -142px;
+      padding: 29px 0 136px 0;
+      display: none; }
+    header .nav_mobile .list_menu_mobile_two {
+      background-image: url(../img/icons/arrow_right.svg);
+      background-repeat: no-repeat;
+      -webkit-background-size: 5px 5px;
+              background-size: 5px;
+      background-position: 110px 9px;
+      margin-bottom: 0;
+      background-position: 137px 9px;
+      padding: 0 91px 0 0; }
+      header .nav_mobile .list_menu_mobile_two:hover > a {
+        color: #00b806; }
+      header .nav_mobile .list_menu_mobile_two:hover {
+        margin-right: 186px; }
+        header .nav_mobile .list_menu_mobile_two:hover > .dropdown_menu_two {
+          display: block; }
+      header .nav_mobile .list_menu_mobile_two .dropdown_menu_two {
+        position: absolute;
+        margin: -72px 0 0 154px;
+        display: none; }
+    header .nav_mobile .list_menu_mobile > a {
+      padding: 0 0 26px 100px;
+      margin: 0 0 0 -100px; }
+      header .nav_mobile .list_menu_mobile > a p {
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 31px;
+        padding-bottom: 0px;
+        color: #000d1d;
+        border-bottom: 1px dashed #00b906;
+        margin: 0; }
+    header .nav_mobile .list_menu_mobile:hover p {
+      color: #00b906; }
+    header .nav_mobile .list_menu_mobile:hover .dropdown_menu {
+      background-color: #fff;
+      -webkit-box-shadow: 0px 8px 100px 0px rgba(0, 0, 0, 0.07);
+              box-shadow: 0px 8px 100px 0px rgba(0, 0, 0, 0.07);
+      display: block; }
   header ul {
     margin: 47px 0 0 29px;
     padding: 0; }
@@ -11566,6 +11612,14 @@ header {
         color: #c8c8c8; }
       header .search input[type="search"]:hover, header .search input[type="search"]:focus, header .search_mobile_active input[type="search"]:hover, header .search_mobile_active input[type="search"]:focus {
         background-image: url(../img/icons/search_active.svg); }
+      header .search input[type="search"]:active + .result_search, header .search input[type="search"]:focus + .result_search, header .search_mobile_active input[type="search"]:active + .result_search, header .search_mobile_active input[type="search"]:focus + .result_search {
+        display: block; }
+  header .search {
+    position: relative; }
+    header .search .result_search {
+      display: none;
+      top: 54px;
+      right: 0px; }
   header .search_mobile_active {
     z-index: 1;
     position: relative;
@@ -11578,6 +11632,42 @@ header {
               box-shadow: 0px 8px 100px 0px rgba(0, 0, 0, 0.07);
       width: 450px;
       background-position: 414px 20px; }
+
+.result_search {
+  display: none;
+  padding: 28px 40px 15px;
+  position: absolute;
+  background-color: #fff;
+  width: 450px;
+  z-index: 100;
+  -webkit-box-shadow: 0px 8px 100px 0px rgba(0, 0, 0, 0.07);
+          box-shadow: 0px 8px 100px 0px rgba(0, 0, 0, 0.07); }
+  .result_search h2 {
+    color: #3e6480;
+    margin: 0 0 16px;
+    font-size: 16px;
+    line-height: 30px;
+    font-family: 'Roboto Slab';
+    font-weight: 400; }
+    .result_search h2 span {
+      color: #c7c7c7; }
+  .result_search a {
+    text-decoration: none;
+    color: #3e6480; }
+    .result_search a:hover {
+      color: #568cb2; }
+  .result_search h3 {
+    margin: -5px 0 0;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400; }
+  .result_search img {
+    float: left;
+    width: 120px;
+    margin-right: 20px;
+    padding-top: 5px; }
+  .result_search .result_search_item {
+    margin-bottom: 27px; }
 
 /*** Выпадающие меню ***/
 .list_menu {
