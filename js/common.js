@@ -24,9 +24,16 @@ $(function(){
 		nav: true,
 		navText: ['<span></span>', '<span></span>'],
 		responsiveClass: true,
+		margin: 30,
 		responsive: {
 			0: {
 				items: 1
+			},
+			480: {
+				items: 2
+			},
+			668: {
+				items: 2
 			},
 			768: {
 				items: 3
