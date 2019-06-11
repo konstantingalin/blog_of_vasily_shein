@@ -5400,6 +5400,8 @@ footer {
 .article-carousel {
   padding-right: 30px;
   position: relative; }
+  .article-carousel .owl-dots {
+    display: none; }
   .article-carousel .owl-nav.disabled {
     display: block; }
   .article-carousel .owl-prev, .article-carousel .owl-next {
@@ -5678,6 +5680,8 @@ footer {
     right: -20px; }
   .article-carousel {
     padding-right: 40px; }
+    .article-carousel .owl-dots {
+      display: block; }
     .article-carousel .owl-prev, .article-carousel .owl-next {
       right: 40px; }
   .similar_articles h4 {
